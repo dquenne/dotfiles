@@ -1,5 +1,6 @@
 {
   "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace, 'MS Gothic', 'MS Mincho'",
+  "editor.fontWeight": "400",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.rulers": [80, 120],
@@ -14,6 +15,10 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format",
     "editor.formatOnSave": true
