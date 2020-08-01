@@ -72,3 +72,8 @@ return
 <#Down::
 Send, !{Down}
 return
+
+;; Ctrl+Alt+Q to simulate Cmd+Ctrl+Q (lock screen)
+^!Q::
+DllCall("LockWorkStation")
+return
