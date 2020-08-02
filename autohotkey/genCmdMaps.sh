@@ -1,5 +1,5 @@
 #!/bin/bash
-cmd_keys=( a c d f n o p r s t v w x y z / )
+cmd_keys=( a c d f n o p r s t v w x y z / - =)
 cmd_shift_keys=( n o p t w z )
 
 # wip 

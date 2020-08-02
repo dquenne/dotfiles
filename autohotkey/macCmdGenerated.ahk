@@ -64,6 +64,14 @@ return
 Send, ^/
 return
 
+!-::
+Send, ^-
+return
+
+!=::
+Send, ^=
+return
+
 +!n::
 Send, +^n
 return

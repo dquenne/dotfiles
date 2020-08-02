@@ -76,4 +76,32 @@ return
 ;; Ctrl+Alt+Q to simulate Cmd+Ctrl+Q (lock screen)
 ^!Q::
 DllCall("LockWorkStation")
+Sleep, 500
+SendMessage,0x112,0xF170,2,,Program Manager
+return
+
+;; PrintScreen opens Snip & Capture instead
+PrintScreen::
+Send, #+s
+return
+
+; WIP - this isn't working because of annoying Ctrl+Alt+Shift+Start shortcuty
+; ;; Ctrl+Alt+Shift+4 for snip & capture
+; ^!+4::
+; Send, {PrintScreen}
+; return
+
+
+; Office shortcut is super annoying
+#^!Shift::
+#^+Alt::
+#!+Ctrl::
+^!+LWin::
+^!+RWin::
+Send, {Blind}{vk07}
+return
+
+; not perfect - this is actually more like Cmd+Shift+W than Cmd+Q
+!q::
+Send, !{F4}
 return
