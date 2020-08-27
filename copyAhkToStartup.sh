@@ -9,14 +9,14 @@ WIN_STARTUP_DIR="/mnt/c/Users/$USER/AppData/Roaming/Microsoft/Windows/Start Menu
 AHK_SUBDIR='autohotkey'
 DIR=$(dirname "$0")
 PARENT_PATH=$(pwd -P)
-AHK_DIR="${PARENT_PATH}/${DIR}/${AHK_SUBDIR}"
+AHK_DIR="$PARENT_PATH/$DIR/$AHK_SUBDIR"
+AHK_STARTUP_DIR="$AHK_DIR/startup"
 
 # generate mappings for Cmd+*
-CMD_MAPS_GENERATOR='genCmdMaps.sh'
+CMD_MAPS_GENERATOR="$AHK_DIR/genCmdMaps.sh"
 
-"${AHK_DIR}/${CMD_MAPS_GENERATOR}"
-
+"$CMD_MAPS_GENERATOR" "$AHK_STARTUP_DIR/macCmdGenerated.ahk"
 
 # copy to startup directory
 
-cp $AHK_DIR/*.ahk "$WIN_STARTUP_DIR"
+cp $AHK_STARTUP_DIR/*.ahk "$WIN_STARTUP_DIR"
