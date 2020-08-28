@@ -14,9 +14,7 @@ AHK_STARTUP_DIR="$AHK_DIR/startup"
 
 # generate mappings for Cmd+*
 CMD_MAPS_GENERATOR="$AHK_DIR/genCmdMaps.sh"
-
 "$CMD_MAPS_GENERATOR" "$AHK_STARTUP_DIR/macCmdGenerated.ahk"
 
-# copy to startup directory
-
+# copy to Windows startup directory
 cp $AHK_STARTUP_DIR/*.ahk "$WIN_STARTUP_DIR"
