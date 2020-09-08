@@ -5,6 +5,10 @@
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
+    "key": "shift+cmd+enter",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
     "key": "shift+ctrl+enter",
     "command": "workbench.action.toggleMaximizedPanel"
   },
