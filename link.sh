@@ -22,6 +22,7 @@ cd ~
 
 # config
 symlink "$CONFIG_DIR/.bash_profile" .bash_profile
+symlink "$CONFIG_DIR/.agignore" .agignore
 symlink "$CONFIG_DIR/.vimrc" .vimrc
 symlink "$CONFIG_DIR/.zshrc" .zshrc
 
