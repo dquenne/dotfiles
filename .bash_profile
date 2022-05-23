@@ -40,7 +40,7 @@ export PATH="$AS_PATH/bin:$PATH"
 
 # emsdk
 
-source ~/code/emsdk/emsdk_env.sh
+# source ~/code/emsdk/emsdk_env.sh
 
 
 # cvkit
