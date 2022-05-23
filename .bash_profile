@@ -47,3 +47,5 @@ source ~/code/emsdk/emsdk_env.sh
 
 export CVKIT_PATH="/home/dylan/code/cvkit"
 export PATH="$CVKIT_PATH/tools:$PATH"
+
+source $HOME/.asdf/asdf.sh
