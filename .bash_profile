@@ -3,13 +3,13 @@
 alias dar="deno --allow-read"
 
 alias agit='ag --ignore={"*tests*","*.test.*"}'
-alias gcom='git fetch origin && git checkout origin/master'
+alias gcom='git fetch origin && git checkout origin/main || git checkout origin/master'
 alias gdc='git diff --cached'
 alias gfo='git fetch origin'
 alias gfu='git fetch upstream'
-alias gom='git fetch origin && git checkout origin/master'
+alias gom='git fetch origin && git checkout origin/main || git checkout origin/master'
 alias gpso='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
-alias gum='git fetch upstream && git checkout upstream/master'
+alias gum='git fetch upstream && git checkout upstream/main || git checkout upstream/master'
 
 # vi mode
 
