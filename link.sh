@@ -25,6 +25,7 @@ symlink "$CONFIG_DIR/.bash_profile" .bash_profile
 symlink "$CONFIG_DIR/.agignore" .agignore
 symlink "$CONFIG_DIR/.vimrc" .vimrc
 symlink "$CONFIG_DIR/.zshrc" .zshrc
+symlink "$CONFIG_DIR/karabiner.json" ~/.config/karabiner/karabiner.json
 
 # vscode
 cd "$VSCODE_SETTINGS_DIR"
