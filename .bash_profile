@@ -1,7 +1,5 @@
 # aliases
 
-alias dar="deno --allow-read"
-
 alias agit='ag --ignore={"*tests*","*.test.*"}'
 alias gcom='git fetch origin && git checkout origin/main || git checkout origin/master'
 alias gdc='git diff --cached'
@@ -23,29 +21,22 @@ then
 export DISPLAY=localhost:0.0
 fi
 
+amplify_env () {
+  if git rev-parse --git-dir >/dev/null 2>&1; then
+    git_root=$(git rev-parse --show-toplevel)
+    if [ -d "${git_root}/www" ]; then
+      envname="$(cat "${git_root}/www/amplify/.config/local-env-info.json" | jq -r '.envName')"
+      echo "${envname}"
+    else
+      echo "na"
+    fi
+  else
+    echo "na"
+  fi
+}
 
-# deno
+# source $HOME/.asdf/asdf.sh
 
-export DENO_INSTALL="/home/dylan/.local"
-export PATH="$DENO_INSTALL/bin:$PATH"
-export DENO_PROTOC="/usr/lib/node_modules/protoc-gen-ts"
-export PATH="$DENO_PROTOC/bin:$PATH"
-
-
-# AssemblyScript
-
-export AS_PATH="/home/dylan/code/assemblyscript"
-export PATH="$AS_PATH/bin:$PATH"
-
-
-# emsdk
-
-source ~/code/emsdk/emsdk_env.sh
-
-
-# cvkit
-
-export CVKIT_PATH="/home/dylan/code/cvkit"
-export PATH="$CVKIT_PATH/tools:$PATH"
-
-source $HOME/.asdf/asdf.sh
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

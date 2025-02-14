@@ -1,4 +1,8 @@
 *.chunk.*
 *.bundle.*
 *.min.*
-node_modules
+**/node_modules/**
+dist
+*.js
+*.js.map
+*current-cloud-backend

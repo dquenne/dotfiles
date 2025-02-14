@@ -3,10 +3,7 @@
   "editor.fontWeight": "400",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
   "prettier.tabWidth": 2,
@@ -40,5 +37,27 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "git.showProgress": false
+  "git.showProgress": false,
+  "editor.hover.delay": 1000,
+  "editor.renderWhitespace": "all",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.suggestSelection": "first",
+  "prettier.configPath": ".prettierrc.js",
+  "prettier.ignorePath": ".prettierignore",
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": ["./www"],
+  "eslint.rules.customizations": [],
+  "json.format.enable": false,
+  "window.confirmBeforeClose": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.ts.snap": "typescript"
+  },
+  "githubPullRequests.terminalLinksHandler": "github",
+  "extensions.ignoreRecommendations": true,
+  "githubPullRequests.pullBranch": "never",
+  "git.openRepositoryInParentFolders": "always"
 }
