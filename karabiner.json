@@ -4,6 +4,41 @@
       "complex_modifications": {
         "rules": [
           {
+            "description": "Change command + 1 from 1 to command + ` on internal JIS keyboard",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "keyboard_types": ["jis"],
+                    "type": "keyboard_type_if"
+                  },
+                  {
+                    "identifiers": [
+                      { "vendor_id": 1452 },
+                      { "vendor_id": 76 },
+                      { "is_built_in_keyboard": true }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "1",
+                  "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["control", "option", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": ["command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Change kana (pc) to kana",
             "manipulators": [
               {
