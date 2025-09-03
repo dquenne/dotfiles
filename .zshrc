@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(adb aws bazel brew colored-man-pages colorize command-not-found common-aliases git gulp jsontools npm yarn xcode)
+plugins=(aws bazel brew colored-man-pages colorize command-not-found common-aliases git gulp jsontools npm yarn xcode)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.bash_profile
