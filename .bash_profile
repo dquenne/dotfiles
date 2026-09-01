@@ -43,6 +43,11 @@ function dylanet {
   git push --force origin ${CURRENT_BRANCH}:dylanet
 }
 
+function dylannet {
+  CURRENT_BRANCH=`git rev-parse --abbrev-ref HEAD`
+  git push --force origin ${CURRENT_BRANCH}:dylannet
+}
+
 # source $HOME/.asdf/asdf.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
