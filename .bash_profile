@@ -8,6 +8,7 @@ alias gfu='git fetch upstream'
 alias gom='git fetch origin && git checkout origin/main || git checkout origin/master'
 alias gpso='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 alias gum='git fetch upstream && git checkout upstream/main || git checkout upstream/master'
+alias mfa='yarn run mfa --name dylan --account dev'
 
 # vi mode
 
